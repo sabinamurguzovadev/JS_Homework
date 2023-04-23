@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Second counter</title>
+  </head>
+  <body>
+    <center>
+        <h1 id="count">0 second</h1>
+    <button id="startBtn" onclick="startCount()">Start</button>
+    <button id="stopBtn" onclick="stopCount()">Stop</button>
+    <br><br><br>
+    <button id="resetButton" onclick="Reset()">Reset</button>
+    <div>
+        <button id="pilusButton" onclick="Pilus()">
+            Pilus
+        </button>
+        <button class="minusButton" onclick="Minus()">
+            Minus
+        </button>
+    </div>
+    </center>
+    <script>
+      var count = 0;
+      var intervalId; 
+
+      function Pilus(){
+        count++
+        document.getElementById("count").innerHTML = count + " second";
+      }
+
+    
+      function Minus(){
+        count--
+        document.getElementById("count").innerHTML = count + " second";
+      }
+
+      function startCount() {
+        intervalId = setInterval(function() {
+          count++;
+          document.getElementById("count").innerHTML = count + " second";
+        }, 1000);
+      }
+
+      function stopCount() {
+        clearInterval(intervalId);
+      }
+      function Reset(){
+        stopCount()
+        document.getElementById("count").innerHTML = "0 second";
+        count = 0
+        
+      }
+
+
+
+    </script>
+
+    <!--  -->
+    <br><br><br><br><br>
+     <center>
+        <label for="numberInput">Enter Number:</label>
+     <input type="number" id="numberInput" value="">
+     <button onclick="doubleNumber()">Double</button>
+     </center>
+ 
+     <script>
+       function doubleNumber() {
+         var input = document.getElementById("numberInput");
+         var value = input.value;
+         input.value = value * 2
+       }
+     </script>
+  </body>
+</html>
+</body>
+</html>
