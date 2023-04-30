@@ -1,0 +1,52 @@
+.itemsAll {
+  background-color: rgb(238, 198, 23);
+  height: 60vh;
+  margin-top: 20px;
+  width: 462px;
+  margin-left: 80px;
+  position: absolute;
+  transform: translate(50%, 50%);
+  top: -20%;
+  left: 10%;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box form .data {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.box .buttonOne {
+  background-color: black;
+  color: white;
+  border-color: black;
+  border-radius: 5px;
+}
+.box button {
+  background-color: burlywood;
+  width: 390px;
+  border-color: burlywood;
+  margin: 10px;
+  font-weight: 700;
+}
+.box .orange {
+  background-color: orangered;
+  border-color: orangered;
+}/*# sourceMappingURL=style.css.map */

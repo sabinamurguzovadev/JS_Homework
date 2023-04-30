@@ -1,0 +1,64 @@
+.itemsAll{
+    background-color: rgb(238, 198, 23);
+    margin-top: 20px;
+    height: 70vh;
+    width: 462px;
+    margin-left: 80px;
+    position: absolute;
+    transform: translate(50%,50%);
+    top: -20%;
+    left: 10%;
+
+   
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+
+.box {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+        .data {
+
+            display: flex;
+            column-gap: 20px;
+
+        }
+
+    }
+
+    .buttonOne {
+        background-color: black;
+        color: white;
+        border-color: black;
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: burlywood;
+        width: 390px;
+        border-color: burlywood;
+        margin: 10px;
+        font-weight: 700;
+    }
+
+    .orange {
+        background-color: orangered;
+        border-color: orangered;
+    }
+}
